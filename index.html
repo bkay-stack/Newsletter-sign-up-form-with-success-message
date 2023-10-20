@@ -3,23 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300
+     ;600;700&family=Overpass:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Css/style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
- 
-
-
- 
-
-
   
 </head>
 <body> 
 
+<div class="newsletter-card">
+   <div class="main-card ">
+    <div class="content-card">
+      <div class="header-big-text">
+        <h2>
+          Stay updated! 
+        </h2>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+      </div>
+  
+      <div class="list-items">
+        <div class="img-list">
+          <div class="img-icons">
+           <img src="/assets/images/icon-list.svg" alt="">
+          </div>
+          <p>
+           Product discovery and building what matters
+          </p>
+        </div>
+        <div class="img-list">
+         <div class="img-icons">
+          <img src="/assets/images/icon-list.svg" alt="">
+         </div>
+         <p>
+          Product discovery and building what matters
+         </p>
+       </div>
+       <div class="img-list">
+         <div class="img-icons">
+          <img src="/assets/images/icon-list.svg" alt="">
+         </div>
+         <p>
+          Product discovery and building what matters
+         </p>
+       </div>
+      </div>
+  
+      <form action="" class="desktop-move">
+      <div class="input-area">
+         <div class="lable-div">
+           <label for="">Email address</label>
+           <p class="error-text">
+             Valid email required
+           </p>
+         </div>
+        <input type="email" name="email" id="email" class="input-area-bc" placeholder="email@company.com ">
+      </div>
+       <div class="btn">
+        <button>Subscribe to monthly newsletter</button>
+       </div>
+      </form>
+    </div>
+    <div class="header-img">
+     <picture>
+       <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+       <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+     </picture>
+  </div>
+   </div>
+     <!-- Hidden cards -->
+     <div class="second-card-header">
+      <div class="second-img">
+       <img src="./assets/images/icon-list.svg" alt="">
+      </div>
+       <div class="header-text">
+         <h1>
+           Thanks for subscribing!
+         </h1>
+           <p>
+             A confirmation email has been sent to <strong>ash@loremcompany.com.</strong>
+             Please open it and click the button inside to confirm your subscription.
+           </p>
+           <form action="">
+             <button class="second-btn">Dismiss message</button>
+           </form>
+       </div>
+   </div>
+</div>
 
+     
+<script src="./assets/app.js" defer></script>
    
   
   <div class="attribution">
@@ -32,28 +109,28 @@
 
  <!-- Sign-up form start -->
 
- Stay updated!
+ <!-- Stay updated! -->
 
- Join 60,000+ product managers receiving monthly updates on:
+ <!-- Join 60,000+ product managers receiving monthly updates on: -->
 
- Product discovery and building what matters
- Measuring to ensure updates are a success
- And much more!
+ <!-- Product discovery and building what matters -->
+ <!-- Measuring to ensure updates are a success -->
+ <!-- And much more! -->
 
- Email address
- email@company.com
-
- Subscribe to monthly newsletter
+ <!-- Email address -->
+ <!-- email@company.com -->
+<!--  -->
+ <!-- Subscribe to monthly newsletter -->
 
  <!-- Sign-up form end -->
 
  <!-- Success message start -->
 
- Thanks for subscribing!
+ <!-- Thanks for subscribing! -->
 
- A confirmation email has been sent to ash@loremcompany.com. 
- Please open it and click the button inside to confirm your subscription.
+ <!-- A confirmation email has been sent to ash@loremcompany.com.  -->
+ <!-- Please open it and click the button inside to confirm your subscription. -->
 
- Dismiss message
+ <!-- Dismiss message -->
 
  <!-- Success message end -->
