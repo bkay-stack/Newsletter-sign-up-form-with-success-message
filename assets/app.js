@@ -54,6 +54,6 @@ const clearFunc = () => {
         errorBorder.style.border = '';
         emailAreaBc.style.backgroundColor = '';
         errorText.style.display = 'none';
-    },1000)
+    },3000)
       
 }
