@@ -57,7 +57,7 @@ const clearFunc = () => {
         emailAreaBc.style.backgroundColor = '';
         errorText.style.display = 'none';
         colorRed.style.display = 'block';
-        colorRed.forEach((element) => {
+        colorRed.forEach((colorRed) => {
             element.style.color = '';
         });
         
