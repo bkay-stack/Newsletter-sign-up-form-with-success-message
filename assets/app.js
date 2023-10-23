@@ -44,6 +44,7 @@ const errorFunc = () => {
     errorBorder.style.border = '1px solid hsl(354, 100%, 66%)';
     emailAreaBc.style.backgroundColor = 'hsl(9, 61%, 89%)';
     errorText.style.display = 'block';
+   
     colorRed.forEach((colorRed) => {
         colorRed.style.color = 'red';
     });
@@ -56,10 +57,11 @@ const clearFunc = () => {
         errorBorder.style.border = '';
         emailAreaBc.style.backgroundColor = '';
         errorText.style.display = 'none';
-        colorRed.style.display = 'block';
         colorRed.forEach((colorRed) => {
             colorRed.style.color = '';
         });
+
+        // console.log(element)
         
     },3000)
       
