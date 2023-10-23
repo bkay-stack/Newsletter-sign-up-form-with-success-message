@@ -7,6 +7,7 @@ const secondBtn = document.querySelector('.sceond-btn');
 const placeholderColor = document.querySelector('placeholder')
 const mainCard = document.querySelector('.main-card');
 const secondCard = document.querySelector('.second-card-header');
+const colorRed = document.querySelectorAll('.input-area input');
 
 
 // Email Validation
@@ -36,15 +37,16 @@ btn.addEventListener('click', (e) => {
 })
 
 
-
-
-
+//  The Functions 
 
 
 const errorFunc = () => {
     errorBorder.style.border = '1px solid hsl(354, 100%, 66%)';
     emailAreaBc.style.backgroundColor = 'hsl(9, 61%, 89%)';
     errorText.style.display = 'block';
+    colorRed.forEach((colorRed) => {
+        colorRed.style.color = 'red';
+    });
     
 
 }
@@ -54,6 +56,11 @@ const clearFunc = () => {
         errorBorder.style.border = '';
         emailAreaBc.style.backgroundColor = '';
         errorText.style.display = 'none';
+        colorRed.style.display = 'block';
+        colorRed.forEach((element) => {
+            element.style.color = '';
+        });
+        
     },3000)
       
 }
