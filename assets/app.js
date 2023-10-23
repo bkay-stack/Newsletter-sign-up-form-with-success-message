@@ -60,7 +60,7 @@ const clearFunc = () => {
         colorRed.forEach((colorRed) => {
             colorRed.style.color = '';
         });
-
+ 
         // console.log(element)
         
     },3000)
