@@ -58,7 +58,7 @@ const clearFunc = () => {
         errorText.style.display = 'none';
         colorRed.style.display = 'block';
         colorRed.forEach((colorRed) => {
-            element.style.color = '';
+            colorRed.style.color = '';
         });
         
     },3000)
